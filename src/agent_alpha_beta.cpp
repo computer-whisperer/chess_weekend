@@ -175,7 +175,7 @@ class CustomUCILoop : public UciLoop {
   }
 
   void CmdGo(const GoParams& /*params*/) override {
-    auto move = findBestMove(current_board, turn_num, 5);
+    auto move = findBestMove(current_board, turn_num, 4);
     //auto move = findBestMove(current_board, turn_num, 1, nullptr, -1000000000, 1000000000);
     if (current_board.flipped())
     {
